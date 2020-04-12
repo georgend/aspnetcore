@@ -27,6 +27,7 @@
       while build test template projects.
     -->
     <AutoGenerateAssemblyVersion Condition=" '$(Language)' == 'C#' ">true</AutoGenerateAssemblyVersion>
+    <DotNetUseShippingVersions Condition=" '$(Language)' == 'C#' ">>true</DotNetUseShippingVersions>
 
     <!--
       Following logic mimics core-setup approach as well as
