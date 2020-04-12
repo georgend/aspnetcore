@@ -118,6 +118,7 @@
 
   <PropertyGroup Condition="'$(Language)' == 'C#' AND '$(IsReferenceAssemblyProject)' == 'true'">
     <!-- Reference assemblies should always use Major.Minor.0.0 for assembly versions even during servicing. Only the package version should be updated. -->
+    <AutoGenerateAssemblyVersion>false</AutoGenerateAssemblyVersion>
     <AssemblyVersion>$(AspNetCoreMajorVersion).$(AspNetCoreMinorVersion).0.0</AssemblyVersion>
   </PropertyGroup>
 
